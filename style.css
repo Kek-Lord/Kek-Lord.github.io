@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+    --Aquamarine: #83E8BA;
+    --TiffanyBlue: #B2E6D4;
+    --CambridgeBlue: #689689;
+    --Taupe: #504136;
+    --Khaki: #A49E8D;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+    margin: 0;
+    background: var(--Taupe);
+}
+
+header {
+    width: 100vw;
+    height: 60px;
+    background-color: var(--Khaki);
+    font-size: 24px;
+    display: flex;
+    text-align: left;
+    justify-content: left;
+    align-items: center;
+    text-indent: 50px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shortcut-links {
+    display: flex;
+    flex-direction: row;
+}
+
+p {
+    margin: 0;
+}
