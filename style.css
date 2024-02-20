@@ -13,7 +13,6 @@ body {
     margin: 0;
     background: var(--Taupe);
 }
-
 header {
     width: 100vw;
     height: 60px;
@@ -27,18 +26,62 @@ header {
 }
 
 nav {
+    color: var(--Aquamarine);
     display: flex;
     flex-direction: row;
     width: 100vw;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid var(--Khaki);
+}
+
+picture {
+    margin-left: 20px;
 }
 
 .shortcut-links {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    width: 300px;
 }
 
 p {
     margin: 0;
+}
+
+span {
+    height: 100px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.image-gallery {
+    width: 100vw;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2em;
+}
+
+img {
+    width: 300px;
+    height: 400px;
+}
+
+.buttons {
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+button {
+    width: 200px;
+    height: 100px;
 }
