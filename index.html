@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
     <title>Document</title>
 </head>
 <body>
@@ -11,24 +12,40 @@
     <nav role="Navigation" class="global-navigation">
         <picture>INSERT LOGO HERE</picture>
         <div class="shortcut-links">
-            <h4 href="#">Home</h4>
-            <h4 href="#">About</h4>
-            <h4 href="#"">Recipes</h4>
-            <h4 href="#">Start Here</h4>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#"">Recipes</a>
+            <a href="#">Start Here</a>
         </div>
     </nav>
-    <span>SIMPLE RECIPES MADE FOR STUDENTS</span>
+    <h3>SIMPLE RECIPES MADE FOR STUDENTS</h3>
     <div class="image-gallery">
-        <img src="assets/fettucine.jpg" alt="">
-        <img src="assets/spaghetti.webp" alt="">
-        <img src="assets/Fajitas.webp" alt="">
-        <img src="assets/ChilliConCarne.jpg" alt="">
+        <div class="container">
+            <img src="assets/fettucine.jpg" alt="">
+            <button class="button">Fettucine</button>
+        </div>
+        <div class="container">
+            <img src="assets/spaghetti.webp" alt="">
+            <button class="button">Spaghetti</button>
+        </div>
+        <div class="container">
+            <img src="assets/Fajitas.webp" alt="">
+            <button class="button">Fajitas</button>
+        </div>
+        <div class="container">
+            <img src="assets/ChilliConCarne.jpg" alt="">
+            <button class="button">Chilli Con Carne</button>
+        </div>
     </div>
-    <div class="buttons">
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-    </div>
+    <section class="semicircle">
+        <div class="search-holder">
+            <input type="text" id="search-input" placeholder="Search Recipes here">
+            <img src="assets/magnifying-glass-icon.png" class="magnifying-glass-icon" alt="">
+            <span>or</span>
+            <a href = "#" class="search-recipes">View All Recipes +</p>
+        </div>
+        <p class="content">idk what to put here</p>
+    </section>
+    <p class="content">More things can go below here</p>
 </body>
 </html>
