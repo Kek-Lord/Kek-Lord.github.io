@@ -207,3 +207,67 @@ p.content {
     text-align: center;
     font-size: 32px;
 }
+
+/* MOBILE STYLING */
+
+@media only screen and (max-device-width: 440px) {
+    header {
+        text-indent: 0;
+        font-size: 22px;
+    }
+
+    picture {
+        margin-left: 10px;
+        margin-right: 20px;
+        font-size: 14px;
+    }
+
+    .shortcut-links {
+        text-decoration: none;
+        margin-right: 0;
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    .image-gallery {
+        width: 100vw;
+        height: 600px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 5%;
+        margin-bottom: 50px;
+    }
+
+    img {
+        width: 40vw;
+        height: 30vh;
+    }
+
+    button {
+        display: none;
+    }
+
+    .semicircle {
+        margin-top: 20px;
+    }
+
+    span {
+        display: none;
+    }
+
+    a.search-recipes {
+        display: none;
+    }
+
+    input {
+        font-size: 18px;
+    }
+}
