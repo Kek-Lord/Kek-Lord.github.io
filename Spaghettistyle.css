@@ -1,0 +1,85 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #F4EFE9; 
+    background-image: url('background-image-url.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    color: #5D4037; 
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background-color: #5D4037; 
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 26px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.navbar {
+    overflow: hidden;
+    background-color: #795548; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+.navbar a:hover, .navbar a:focus {
+    background-color: #6D4C41; 
+    transition: background-color 0.3s ease;
+}
+.main-heading, h1 {
+    color: #5D4037;
+    text-align: center;
+    margin: 50px 0 30px;
+    font-size: 28px;
+}
+.recipe {
+    display: flex;
+    flex-direction: row-reverse; 
+    align-items: center;
+    background-color: #ffffff;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    padding: 40px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    max-width: 960px;
+}
+.recipe img {
+    margin-left: 30px; 
+    width: 45%; 
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+}
+.recipe-description, .ingredients, .instructions {
+    margin-top: 20px;
+}
+.ingredients ul, .instructions ol {
+    padding-left: 20px;
+}
+.ingredients li, .instructions li {
+    margin-bottom: 15px;
+}
+h3 {
+    color: #795548; 
+    margin-bottom: 15px;
+    font-size: 20px; 
+}
+@media screen and (max-width: 768px) {
+    .recipe {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .recipe img {
+        width: 80%; 
+        margin: 0 auto 20px; 
+    }
+}

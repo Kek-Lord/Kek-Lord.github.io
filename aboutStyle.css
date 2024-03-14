@@ -1,0 +1,40 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #e0c9a9; /* Light brown background */
+  }
+  
+  nav {
+    background-color: #3e2723; /* Dark brown navigation bar */
+    padding: 10px;
+    text-align: center;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+  }
+  
+  #about-title {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 30px;
+    color: #3e2723; /* Dark brown text */
+  }
+  
+  #about-content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  img {
+    width: 100%;
+  }
