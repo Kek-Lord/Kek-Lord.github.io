@@ -61,15 +61,15 @@
         <form id="contact-form" action="http://130.162.169.130/send-email" method="POST">
           <div class="form-group">
             <label for="subject">Subject:</label>
-            <input type="text" id="subject" name="subject" required>
+            <input type="text" id="subject" name="subject" required maxlength="50">
           </div>
           <div class="form-group">
             <label for="email">Your Email:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" required maxlength="50">
           </div>
           <div class="form-group">
             <label for="suggestion">Your Suggestion:</label>
-            <textarea id="suggestion" name="suggestion" required></textarea>
+            <textarea id="suggestion" name="suggestion" required maxlength="400"></textarea>
           </div>
           <div class="form-group">
             <button type="submit" id="form-submit-button">Submit</button>
