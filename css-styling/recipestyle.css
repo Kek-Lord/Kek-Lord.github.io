@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+    font-family: "Josefin Sans", sans-serif;
+}
+
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #F4EFE9; 
+    font-family: 'Josefin Sans', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #504136; 
     background-size: cover; 
     background-position: center; 
-    color: #5D4037; 
     line-height: 1.8;
     margin: 0;
     padding: 0;
@@ -16,6 +21,54 @@ body {
     font-size: 26px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
+
+nav {
+    color: #83E8BA;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #A49E8D;
+    background-color: #333333;
+}
+
+.global-navigation {
+    border-bottom: solid 2px white;
+    border-top: solid 2px white;
+}
+
+.global-navigation a {
+    border-bottom: solid 1px white ;
+    margin: 4px;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.global-navigation a:hover {
+    background-color: black;
+}
+
+picture {
+    margin-left: 300px;
+}
+
+.shortcut-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 300px;
+    width: 820px;
+    column-gap: 20px;
+    font-size: 20px;
+}
+
+a {
+    color: var(--Aquamarine);
+}
+
 .navbar {
     overflow: hidden;
     background-color: #795548; 
@@ -35,7 +88,7 @@ body {
     transition: background-color 0.3s ease;
 }
 .main-heading, h1 {
-    color: #5D4037;
+    color: #ffffff;
     text-align: center;
     margin: 50px 0 30px;
     font-size: 28px;
@@ -44,9 +97,9 @@ body {
     display: flex;
     flex-direction: row-reverse; 
     align-items: center;
-    background-color: #ffffff;
+    background-color: #f5f5f5;
     margin: 20px auto;
-    border: 1px solid #ddd;
+    border-radius: 20px;
     padding: 40px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     overflow: hidden;

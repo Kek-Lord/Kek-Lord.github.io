@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css-styling/style.css">
     <link rel="icon" type="image/x-icon" href="assets/favicon.png">
     <title>Document</title>
 </head>
@@ -13,35 +13,35 @@
         <picture>INSERT LOGO HERE</picture>
         <div class="shortcut-links">
             <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="allRecipes.html">Recipes</a>
+            <a href="html/about.html">About</a>
+            <a href="html/allRecipes.html">Recipes</a>
             <a href="#">Start Here</a>
-            <a href="ratings.html">Ratings</a>
+            <a href="html/ratings.html">Ratings</a>
         </div>
     </nav>
     <h3>SIMPLE RECIPES MADE FOR STUDENTS</h3>
     <div class="image-gallery">
-        <a href="BreakfastRecipes.html">
+        <a href="html/pancake.html">
             <div class="container">
-                <img src="Pancake.png" alt="">
+                <img src="images/Pancake.png" alt="">
                 <button class="button">Pancakes</button>
             </div>
         </a>
-        <a href="DinnerRecipes.html">
+        <a href="html/spaghetti.html">
             <div class="container" href="DinnerRecipes.html">
-                <img src="assets/spaghetti.webp" alt="">
+                <img src="images/spaghetti.webp" alt="">
                 <button class="button">Spaghetti</button>
             </div>
         </a>
-        <a href="">
+        <a href="html/frenchToast.html">
         <div class="container">
-            <img src="assets/Fajitas.webp" alt="">
-            <button class="button">Fajitas</button>
+            <img src="images/FrenchToast.png" alt="">
+            <button class="button">French Toast</button>
         </div>
         </a>
-        <a href="omelette.html">
+        <a href="html/omelette.html">
         <div class="container">
-            <img src="assets/omelette.png" alt="">
+            <img src="images/FrenchToast.png" alt="">
             <button class="button">Omelette</button>
         </div>
         </a>
@@ -49,32 +49,33 @@
     <section class="semicircle">
         <div class="search-holder">
             <input type="text" id="search-input" placeholder="Search Recipes here">
-            <img src="assets/magnifying-glass-icon.png" class="magnifying-glass-icon" alt="">
+            <img src="images/magnifying-glass-icon.png" class="magnifying-glass-icon" alt="">
             <span>or</span>
             <a href = "allRecipes.html" class="search-recipes">View All Recipes +</p></a>
         </div>
-        <p class="content">Breakfast or Dinner recipes made for you, for your budget</p>
+        <p class="content">Breakfast and Dinner recipes made for you, for your budget</p>
     </section>
     <p class="content">Have a suggestion? Contact us here!</p>
     <div class="contact-form">
         <h2>Contact Us</h2>
         <form id="contact-form" action="http://130.162.169.130/send-email" method="POST">
-          <div class="form-group">
-            <label for="subject">Subject:</label>
-            <input type="text" id="subject" name="subject" required maxlength="50">
-          </div>
-          <div class="form-group">
-            <label for="email">Your Email:</label>
-            <input type="email" id="email" name="email" required maxlength="50">
-          </div>
-          <div class="form-group">
-            <label for="suggestion">Your Suggestion:</label>
-            <textarea id="suggestion" name="suggestion" required maxlength="400"></textarea>
-          </div>
-          <div class="form-group">
-            <button type="submit" id="form-submit-button">Submit</button>
-          </div>
+            <div class="form-group">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required maxlength="50">
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required maxlength="50">
+            </div>
+            <div class="form-group">
+                <label for="suggestion">Your Suggestion:</label>
+                <textarea id="suggestion" name="suggestion" required maxlength="400"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="form-submit-button">Submit</button>
+            </div>
         </form>
-      </div>
+    </div>
+    
 </body>
 </html>

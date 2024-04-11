@@ -216,6 +216,7 @@ p.content {
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 450px;
 }
 
 .form-group {
@@ -226,16 +227,16 @@ p.content {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
-
 }
 
 .form-group input[type="text"],
 .form-group input[type="email"],
 .form-group textarea {
-    width: 95%;
+    width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 3px;
+    box-sizing: border-box;
 }
 
 .form-group textarea {
@@ -243,17 +244,23 @@ p.content {
 }
 
 .form-group button {
-    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 400px;
     background-color: #007bff;
     color: #fff;
     border: none;
     border-radius: 3px;
     cursor: pointer;
+    margin: 0;
 }
 
 .form-group button:hover {
     background-color: #0056b3;
 }
+
 
 /* MOBILE STYLING */
 
@@ -330,7 +337,6 @@ p.content {
     padding: 10px;
     color: white;
     text-decoration: none;
-
 }
 
 .global-navigation a:hover {
@@ -595,7 +601,8 @@ span {
   }
 
 p.content {
-    margin-top: 100px;
+    height: 100px;
+    margin-top: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
