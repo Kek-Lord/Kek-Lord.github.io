@@ -43,18 +43,13 @@ nav {
     border-bottom: 1px solid var(--Khaki);
 }
 
-picture {
-    margin-left: 300px;
-}
-
 .shortcut-links {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     margin-right: 300px;
-    width: 820px;
-    column-gap: 20px;
-    font-size: 20px;
+    width: 100%;
+    column-gap: 0px;
 }
 
 a {
@@ -92,6 +87,12 @@ img:hover {
     opacity: 0.3;
     transition: opacity 0.1s ease;
     cursor: pointer;
+}
+
+img.logo {
+    all: revert;
+    height: 102px;
+    align-self: left;
 }
 
 .buttons {
@@ -202,6 +203,7 @@ span {
 
 p.content {
     margin-top: 50px;
+    margin-bottom: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -265,20 +267,17 @@ p.content {
 /* MOBILE STYLING */
 
 @media only screen and (max-device-width: 440px) {
+    body {
+        width: 100vw;
+    }
+    
     header {
         text-indent: 0;
         font-size: 22px;
     }
 
-    picture {
-        margin-left: 10px;
-        margin-right: 20px;
-        font-size: 14px;
-    }
-
-    .shortcut-links {
-        text-decoration: none;
-        margin-right: 0;
+    img.logo {
+        display: none;
     }
 
     a {
@@ -305,7 +304,11 @@ p.content {
         height: 30vh;
     }
 
-    button {
+    .form-group button {
+        display: flex;
+        width: 80%;
+    }
+    button.button {
         display: none;
     }
 
@@ -667,11 +670,6 @@ p.content {
 }
 
 
-.shortcut-links div {
-    display: inline-block;
-}
-
-
 @media only screen and (max-width: 768px) {
     /* Your CSS styles for mobile devices */
     .recipe img{
@@ -863,9 +861,9 @@ picture {
 .shortcut-links {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-around;
     margin-right: 300px;
-    width: 820px;
+    width: 100%;
     column-gap: 20px;
     font-size: 20px;
 }
@@ -995,7 +993,7 @@ span {
     margin: 0;
     position: relative;
     background: whitesmoke;
-    height: 30vh;
+    height: 50vh;
     opacity: 0.9;
     width: 100%;
   }
@@ -1027,7 +1025,7 @@ p.content {
 @media only screen and (max-device-width: 440px) {
     header {
         text-indent: 0;
-        font-size: 22px;
+        font-size: 18px;
     }
 
     picture {
@@ -1037,17 +1035,23 @@ p.content {
     }
 
     .shortcut-links {
+        display: flex;
         text-decoration: none;
         margin-right: 0;
+        justify-content: space-between;
+        row-gap: 0;
+        column-gap: 0;
+        width: 100vw;
     }
 
     a {
         text-decoration: none;
-        font-size: 20px;
+        font-size: 10px;
+        padding: 0;
     }
 
     h3 {
-        font-size: 24px;
+        font-size: 22px;
     }
 
     .image-gallery {
@@ -1063,10 +1067,6 @@ p.content {
     img {
         width: 40vw;
         height: 30vh;
-    }
-
-    button {
-        display: none;
     }
 
     .semicircle {
