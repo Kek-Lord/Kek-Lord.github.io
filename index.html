@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css-styling/style.css">
     <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+    <script src="script.js"></script>
     <title>Document</title>
 </head>
 <body>
-    <header>Group 3 Recipe website for students</header>
-    <nav role="Navigation" class="global-navigation" >
+    <nav role="Navigation" class="global-navigation">
         <img src="images/logo.png" class="logo"></img>
         <div class="shortcut-links">
             <a href="index.html">Home</a>
@@ -47,14 +47,27 @@
         </a>
     </div>
     <section class="semicircle">
+
         <div class="search-holder">
             <input type="text" id="search-input" placeholder="Search Recipes here">
             <img src="images/magnifying-glass-icon.png" class="magnifying-glass-icon" alt="">
             <span>or</span>
             <a href = "/html/allRecipes.html" class="search-recipes">View All Recipes +</p></a>
         </div>
+        <div id="card-gallery">
+            <template id="recipe-card-template">
+                <div class="recipe-card">
+                    <a href="" class="recipe-link">
+                        <img class="recipe-card-image" src="" alt="">
+                        <p class="recipe-card-text"></p>
+                    </a>
+                </div>
+            </template>
+        </div>
+
         <p class="content">Breakfast and Dinner recipes made for you, for your budget</p>
     </section>
+
     <p class="content">Have a suggestion? Contact us here!</p>
     <div class="contact-form">
         <h2>Contact Us</h2>

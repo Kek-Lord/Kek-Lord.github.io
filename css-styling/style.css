@@ -95,6 +95,11 @@ img.logo {
     align-self: left;
 }
 
+img.logo:hover {
+    cursor: default;
+    opacity: 1;
+}
+
 .buttons {
     width: 100vw;
     height: 100px;
@@ -183,7 +188,6 @@ span {
     margin: 0;
     position: relative;
     background: whitesmoke;
-    height: 30vh;
     opacity: 0.9;
     width: 100%;
   }
@@ -199,11 +203,19 @@ span {
     background: whitesmoke;
     transform: translateX(-50%) translateY(50%);
     bottom: 0px;
-  }
+}
+
+#card-gallery {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
 
 p.content {
     margin-top: 50px;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -585,7 +597,6 @@ span {
     margin: 0;
     position: relative;
     background: whitesmoke;
-    height: 30vh;
     opacity: 0.9;
     width: 100%;
   }
@@ -606,6 +617,7 @@ span {
 p.content {
     height: 100px;
     margin-top: 150px;
+    margin-bottom: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -993,7 +1005,6 @@ span {
     margin: 0;
     position: relative;
     background: whitesmoke;
-    height: 50vh;
     opacity: 0.9;
     width: 100%;
   }
@@ -1013,11 +1024,39 @@ span {
 
 p.content {
     margin-top: 50px;
+    margin-bottom: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     font-size: 32px;
+}
+
+.recipe-card {
+    display: flex;
+    width: 200px;
+    background-color: var(--Taupe);
+    border-radius: 16px;
+    text-align: center;
+    overflow: hidden;
+    filter:drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.8));
+}
+
+.recipe-link {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+img.recipe-card-image {
+    width: auto;
+    height: 200px;
+    object-fit: cover;
+    aspect-ratio: 1;
+}
+
+.recipe-card-text {
+    font-size: 26px;
+    padding: 12px;
 }
 
 /* MOBILE STYLING */
@@ -1076,6 +1115,7 @@ p.content {
     span {
         display: none;
     }
+
 
     a.search-recipes {
         display: none;
